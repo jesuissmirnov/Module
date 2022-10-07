@@ -119,19 +119,20 @@ p {
     left: 0;
     z-index: 30;
     width: 100%;
+    
 }
 
 .container_head {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1180px;
-    padding: 0px 15px;
+    max-width:1180px;
+    padding: 50px 0px 15px;
     margin: auto;
 }
 
 .logo {
-    margin-top: 57px;
+    
 
 }
 
@@ -144,8 +145,7 @@ p {
 .nav-list {
     display: flex;
     list-style: none;
-    margin-top: 79px;
-    margin-left: 398px;
+    
     width: 100%;
 
 
@@ -177,7 +177,7 @@ p {
 }
 
 .container-screen {
-    width: 1180px;
+    max-width: 1180px;
     padding: 0px 15px;
     margin: 0 auto;
     display: flex;
@@ -263,7 +263,7 @@ p {
 }
 
 .cotanier-numbers {
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     padding: 0 15px;
     margin: 0 auto;
@@ -302,25 +302,24 @@ p {
 }
 
 .container-skill {
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
-    padding: 15px;
-    margin: 100px auto;
-    justify-content: space-around;
+    padding: 100px 15px;
+    margin:  auto;
+    justify-content: space-between;
 }
 
-.img-author {
 
-    height: 450px;
-    width: 555px;
+.img-author {
+    display: block;
+    width: 47%;
 }
 
 .skill-list {
     color: #727272;
     font-size: 16px;
     padding-top: 50px;
-    padding-right: 150px;
-    width: 445px;
+    width: 40%;
 
 
 }
@@ -375,7 +374,7 @@ p {
 }
 
 .container-video {
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     padding: 15px;
     margin: 0px auto;
@@ -536,7 +535,7 @@ p {
 .container-footer{
     display: flex;
     align-items: center;
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
     justify-content: space-between;
@@ -563,7 +562,7 @@ time::before{
 
 
 
-@media (max-width: 1300px) {
+ @media (max-width: 1200px) {
    .container-screen{
     width: 50%;
     flex-direction: column;
@@ -578,5 +577,17 @@ time::before{
     font-size: 12px;
     line-height: normal;
    }  
-   
+   .cotanier-numbers{
+    width: 50%;
+   }
+   .container-skill{
+    flex-direction: column;
+   align-items: center;
+    justify-content: space-around;
+    padding-top: 0px;
+   }
+   .skill-list{
+    padding-bottom: 50px;
+    
+   }
 }
