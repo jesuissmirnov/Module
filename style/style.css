@@ -121,7 +121,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 30;
+    z-index: 3;
     width: 100%;
 
 }
@@ -166,12 +166,13 @@ p {
 }
 
 .menu__item:hover {
-    color: #34547A;
+    color: #000080;
     transition: color ease 0.5s;
 }
+
 .menu__btn,
 #menu__toggle {
-  display: none;
+    display: none;
 }
 
 /* Основной контент */
@@ -187,8 +188,6 @@ p {
     margin: 0 auto;
     display: flex;
 
-
-    /* height: 700px; */
 }
 
 .first-screen {
@@ -206,7 +205,6 @@ p {
 
 .screen-img {
 
-    /* display: block; */
     margin: 285px 150px 0px 0px;
 
     width: 68%;
@@ -281,9 +279,11 @@ p {
     flex-basis: 22%;
     padding-right: 30px;
 }
-.project-numbers:last-child{
+
+.project-numbers:last-child {
     padding-right: 0px;
 }
+
 .project-item {
 
     font-size: 46px;
@@ -592,11 +592,13 @@ p {
 
     .screen-img {
         width: 75%;
-        margin: 250px 0px 0px ;
+        margin: 250px 0px 0px;
     }
-    .text{
-        margin: 100px auto  ;
+
+    .text {
+        margin: 100px auto;
     }
+
     .btn {
         padding: 19px 20px;
         font-size: 12px;
@@ -605,12 +607,13 @@ p {
 
     .project-numbers {
         width: calc(100% / 4);
-       
+
 
 
     }
-    .project-numbers:last-child{
- padding-right: 30px;
+
+    .project-numbers:last-child {
+        padding-right: 30px;
     }
 
 
@@ -644,87 +647,134 @@ p {
     }
 
 }
-@media (max-width: 750px){
+
+@media (max-width: 750px) {
     .nav-list {
         display: block;
-      }
-    
-      .nav-list a {
+
+    }
+
+    .nav-list a {
         padding: 12px 24px;
-      }
-    
-      #menu__toggle {
+    }
+
+    .menu__item {
+        padding-bottom: 30px;
+        color: #C4C4C4;
+    }
+
+    #menu__toggle {
         display: block;
-        opacity: 0;}
-     
-    
-      .menu__btn {
+        opacity: 0;
+    }
+
+
+    .menu__btn {
         display: flex;
         align-items: center;
         width: 26px;
         height: 26px;
         cursor: pointer;
         z-index: 1;
-        position: relative
-      }
-    
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
+        position: relative;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
         display: block;
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #616161;
+        background-color: rgba(52, 84, 122, 1);
+
         transition-duration: .25s;
-      }
-    
-      .menu__btn > span::before {
+    }
+
+    .menu__btn>span::before {
         content: '';
         top: -8px;
-      }
-    
-      .menu__btn > span::after {
+    }
+
+    .menu__btn>span::after {
         content: '';
         top: 8px;
-      }
-    
-      .nav {
-    
+    }
+
+    .nav {
+
         font-size: 20px;
         display: block;
         position: fixed;
         visibility: hidden;
         top: 0;
         left: -100%;
-        width: 240px;
+        width: 50%;
         height: 100%;
         margin: 0;
         padding: 80px 0;
         list-style: none;
         text-align: center;
-        background-color: #ECEFF1;
+        background-color: #34547A;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        transition:  left .3s ease;
-      }
-    
-      #menu__toggle:checked ~ .menu__btn > span {
+        transition: left .3s ease;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
-      }
-    
-      #menu__toggle:checked ~ .menu__btn > span::before {
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
         top: 0;
         transform: rotate(0);
-      }
-    
-      #menu__toggle:checked ~ .menu__btn > span::after {
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
         top: 0;
         transform: rotate(90deg);
-      }
-    
-      #menu__toggle:checked ~ .nav {
+    }
+
+    #menu__toggle:checked~.nav {
         visibility: visible;
         left: 0;
-      }
+    }
 
-} 
+}
+
+@media (max-width: 540px) {
+    h3{
+        font-size: 11px;
+        line-height:22px;
+        margin: 7px 0px auto;
+    }
+
+    .screen-img{
+        width: 100%;
+    }
+    .btn{
+        width: 75%;
+    }
+    .text{
+        width: 75%;
+    }
+    .contanier-about{
+        flex-basis: 100%;
+    }
+ 
+  
+    .project-item{
+        font-size: 22px;
+    }
+    .text-numbers{
+        padding-top: 10px;
+        margin-left: 10px;
+          }
+          .text-numbers>p{
+            font-size: 10px;
+            line-height: 14px;
+          }
+    
+}
+    
+
+
