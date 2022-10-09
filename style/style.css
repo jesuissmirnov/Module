@@ -664,9 +664,10 @@ p {
 }
 
 @media (max-width: 750px) {
+ 
     .nav-list {
         display: block;
-
+        
     }
 
     .nav-list a {
@@ -692,6 +693,7 @@ p {
         cursor: pointer;
         z-index: 1;
         position: relative;
+       
         
     }
     #menu__toggle:checked~.menu__btn{
@@ -699,6 +701,7 @@ p {
         top:76px;
          right: 22px;
           z-index: 16;
+          
     }
 
     .menu__btn>span,
@@ -724,7 +727,7 @@ p {
     }
 
     .nav {
-
+        
         font-size: 20px;
         display: block;
         position: fixed;
@@ -769,9 +772,13 @@ p {
     .btn {
         width: 50%;
     }
-    .cotanier-numbers{
-       
+    .img-video{
+        width: 100%;
+    }  
+     .btn-icon{
+        font-size:40px;  
     }
+
     .clients {
         padding: 50px 0px;
         width: 50%;
@@ -780,9 +787,7 @@ p {
 
         font-size: 25px;
     }
-    .btn-icon{
-        font-size:30px;  
-    }
+ 
     .section-form{
         width:100%;
     }
@@ -822,6 +827,7 @@ p {
             font-size: 10px;
             line-height: 14px;
           }
+          
     .clients{
         width: 75%;
     }
