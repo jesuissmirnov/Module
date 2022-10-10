@@ -318,7 +318,7 @@ p {
 
 
 .img-author {
-   
+
     width: 47%;
 }
 
@@ -573,6 +573,7 @@ p {
     h1 {
         font-size: 24px;
         line-height: 34px;
+        text-align: center;
     }
 
     h2 {
@@ -580,7 +581,7 @@ p {
         line-height: 20px;
         margin-bottom: 25px;
     }
-    
+
 
     .container-screen {
         width: 100%;
@@ -588,15 +589,18 @@ p {
         justify-content: center;
         align-items: center;
     }
-    .screen-img{
+
+    .screen-img {
         margin-right: auto;
     }
+
     .img-row {
-        width: 50%;
+        width: 75%;
     }
 
     .text {
-        margin: 100px  auto;
+        width: 50%;
+        margin: 100px auto;
     }
 
     .btn {
@@ -605,7 +609,8 @@ p {
         font-size: 12px;
         line-height: normal;
     }
-    .contanier-about{
+
+    .contanier-about {
         width: 100%;
     }
 
@@ -624,7 +629,7 @@ p {
         justify-content: space-between;
 
     }
-    
+
 
     .container-skill {
         flex-direction: column;
@@ -632,8 +637,8 @@ p {
         justify-content: space-around;
         padding-top: 0px;
     }
-   
-    .img-author{
+
+    .img-author {
         width: 75%;
     }
 
@@ -641,15 +646,17 @@ p {
         padding-bottom: 50px;
         width: 75%;
     }
-    .title-video{
+
+    .title-video {
         width: 75%;
     }
 
-    .img-video{
+    .img-video {
         width: 75%;
     }
-    .btn-icon{
-        font-size:75px;  
+
+    .btn-icon {
+        font-size: 75px;
     }
 
     .clients {
@@ -657,17 +664,18 @@ p {
         width: 75%;
 
     }
-    .container-form{
+
+    .container-form {
         width: 75%;
     }
 
 }
 
 @media (max-width: 750px) {
- 
+
     .nav-list {
         display: block;
-        
+
     }
 
     .nav-list a {
@@ -693,15 +701,16 @@ p {
         cursor: pointer;
         z-index: 1;
         position: relative;
-       
-        
+
+
     }
-    #menu__toggle:checked~.menu__btn{
-        position: fixed; 
-        top:76px;
-         right: 22px;
-          z-index: 16;
-          
+
+    #menu__toggle:checked~.menu__btn {
+        position: fixed;
+        top: 76px;
+        right: 22px;
+        z-index: 2;
+
     }
 
     .menu__btn>span,
@@ -727,7 +736,7 @@ p {
     }
 
     .nav {
-        
+
         font-size: 20px;
         display: block;
         position: fixed;
@@ -744,12 +753,12 @@ p {
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition: left .3s ease;
     }
-   
+
 
     #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
-        
-       
+
+
     }
 
     #menu__toggle:checked~.menu__btn>span::before {
@@ -760,85 +769,107 @@ p {
     #menu__toggle:checked~.menu__btn>span::after {
         top: 0;
         transform: rotate(90deg);
-        
+
     }
 
     #menu__toggle:checked~.nav {
         visibility: visible;
         left: 0;
-        
-     
+
+
+
+
     }
+
     .btn {
-        width: 50%;
+        width: 90%;
     }
-    .img-video{
+
+    .text {
+        text-align: center;
+    }
+
+    .img-video {
         width: 100%;
-    }  
-     .btn-icon{
-        font-size:40px;  
+    }
+
+    .btn-icon {
+        font-size: 40px;
+    }
+
+    .icon-Group1 {
+
+        font-size: 25px;
+    }
+
+    .gallary-item {
+        width: 50%;
+        padding-top: 50%;
     }
 
     .clients {
         padding: 50px 0px;
         width: 50%;
     }
-    .icon-Group1{
 
-        font-size: 25px;
-    }
- 
-    .section-form{
-        width:100%;
+
+    .section-form {
+        width: 100%;
     }
 }
 
 @media (max-width:520px) {
-    h3{
+    h3 {
         font-size: 11px;
-        line-height:22px;
+        line-height: 22px;
         margin: 7px 0px auto;
     }
 
-    .img-row{
+    .img-row {
         width: 100%;
     }
-    .btn{
-        width: 50%;
-    }
-    .text{
+
+    .text {
         width: 75%;
     }
-    .contanier-about{
+
+    .contanier-about {
         flex-basis: 100%;
     }
-    .cotanier-numbers{
+
+    .cotanier-numbers {
         margin: 0;
     }
-  
-    .project-item{
+
+    .project-item {
         font-size: 22px;
     }
-    .text-numbers{
+
+    .text-numbers {
         padding-top: 10px;
         margin-left: 10px;
-          }
-          .text-numbers>p{
-            font-size: 10px;
-            line-height: 14px;
-          }
-          
-    .clients{
+    }
+
+    .text-numbers>p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .clients {
         width: 75%;
     }
-    .container-footer{
+
+    .container-footer {
         flex-direction: column;
     }
-    .data-footer{
+
+    .data-footer {
         text-align: center;
         padding: 10px 0px;
     }
+
+    .footer-list>li {
+        padding-right: 20px;
+    }
+
 }
-    
-
-
