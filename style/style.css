@@ -53,8 +53,6 @@
 
 }
 
-
-
 *,
 *::before *::after {
     box-sizing: border-box;
@@ -135,8 +133,6 @@ p {
     margin: auto;
 }
 
-
-
 .logo a {
     text-decoration: none;
     font-size: 48px;
@@ -164,7 +160,7 @@ p {
     letter-spacing: 0.1em;
 
 }
-
+/* Меню Бургер */
 .menu__item:hover {
     color: #000080;
     transition: color ease 0.5s;
@@ -179,7 +175,6 @@ p {
 .main-screen {
     width: 100%;
     flex: 1 1 auto;
-
 }
 
 .container-screen {
@@ -192,8 +187,6 @@ p {
 
 .first-screen {
     width: 100%;
-
-
 }
 
 .img-row {
@@ -247,7 +240,6 @@ p {
 
     display: flex;
     flex-direction: column;
-
     width: 40%;
     margin: 119px auto;
     text-align: center;
@@ -353,24 +345,6 @@ p {
     left: 0;
     background: #34547A;
 }
-
-
-
-
-.gallary-item {
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 25%;
-    padding-top: 25%;
-    position: relative;
-
-}
-
-
-
-
 .video {
     width: 100%;
     background-color: #EEEFF1;
@@ -407,10 +381,18 @@ p {
     text-decoration: none;
     font-size: 100px;
 
-
 }
 
+.gallary-item {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    padding-top: 25%;
+    position: relative;
 
+}
 
 
 .gallary-list {
@@ -450,9 +432,6 @@ p {
     justify-content: space-between;
     padding: 100px 0px;
 }
-
-
-
 
 .form {
 
@@ -511,7 +490,6 @@ p {
     padding: 0;
 
     border: none;
-
 }
 
 .btn-form {
@@ -670,7 +648,7 @@ p {
     }
 
 }
-
+ /* Меню Бургер */
 @media (max-width: 850px) {
 
     .nav-list {
@@ -758,7 +736,6 @@ p {
     #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
 
-
     }
 
     #menu__toggle:checked~.menu__btn>span::before {
@@ -775,9 +752,6 @@ p {
     #menu__toggle:checked~.nav {
         visibility: visible;
         left: 0;
-
-
-
 
     }
 
