@@ -671,7 +671,7 @@ p {
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 
     .nav-list {
         display: block;
@@ -807,11 +807,6 @@ p {
         padding-top: 50%;
     }
 
-    .clients {
-        padding: 50px 0px;
-        width: 50%;
-    }
-
 
     .section-form {
         width: 100%;
@@ -854,8 +849,9 @@ p {
         font-size: 10px;
         line-height: 14px;
     }
-
+   
     .clients {
+        
         width: 75%;
     }
 
